@@ -1,0 +1,60 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(background.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.center {
+  background-color: white;
+  width: 400px;
+  margin: 150px auto;
+  padding: 10px 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 60px;
+  padding: 0 10px;
+}
+
+input[type="number"]{
+  width: 250px;
+  height: 40px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=number]:focus {
+  border: 2px solid #555;
+}
+
+button {
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  padding: 4px 20px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #555555;
+  color: white;
+}
