@@ -6,18 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Калькулятор ИМТ</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="center">
         <h2>Калькулятор ИМТ</h2>
-        <form action="#">
+        <div class="form1">
             <label for="weight">Вес</label>
             <input type ="number" name ="weight" id ="weight">
             <label for="height">Рост</label>
             <input type ="number" name ="height" id="height">
             <button onclick="getResult()"><h3>Результат</h3></button>
-        </form>
+        </div>
         <p id="result">Ваш ИМТ: 0</p>
+        <table id="imt">
+            <tr>
+              <th scope="col">Индекс массы тела</th>
+              <th scope="col">Соответствие между массой человека и его ростом</th>
+            </tr>
+            <tr>
+                <td>16 и менее</td>
+                <td>Выраженный дефицит массы тела</td>
+            </tr>
+            <tr>
+                <td>16-18,5</td>
+                <td>Недостаточная (дефицит) масса тела</td>
+            </tr>
+            <tr>
+                <td>18,5-25</td>
+                <td>Норма</td>
+            </tr>
+            <tr>
+                <td>25-30</td>
+                <td>Избыточная масса тела (предожирение)</td>
+            </tr>
+            <tr>
+                <td>30-35</td>
+                <td>Ожирение первой степени</td>
+            </tr>
+            <tr>
+                <td>35-40</td>
+                <td>Ожирение второй степени</td>
+            </tr>
+            <tr>
+                <td>40 и более</td>
+                <td>Ожирение третьей степени (морбидное)</td>
+            </tr>
+          </table>
     </div>
     <script src="code.js"></script> 
 </body>
